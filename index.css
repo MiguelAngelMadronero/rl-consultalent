@@ -274,6 +274,36 @@ body {
 }
 /* Fin hero main */
 
+/* Inicio Animación */
+
+.anim{
+    opacity: 0;
+    transform: translateX(30px);
+    animation: moveright 0.5s linear forwards;
+}
+
+@keyframes moveright {
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.anim-left{
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: moveleft 0.5s linear forwards;
+}
+
+@keyframes moveleft {
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* Fin animacion */
+
 
 
 
