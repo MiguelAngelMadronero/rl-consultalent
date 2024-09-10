@@ -26,6 +26,8 @@
 
     --color-rose:#df4881;
     --color-purple:#c430d7;
+    --text-dark:#0a0a0a;
+    --text-light:#737373;
     --padding-container: 32px 0;
 }
 
@@ -209,6 +211,7 @@ body {
     margin-bottom: 8%;
     letter-spacing: -2px;
     line-height: 1.3;
+    color: var(--text-dark);
 }
 
 .main__span{
@@ -217,6 +220,7 @@ body {
 
 .main__paragraph{
     margin-bottom: 8%;
+    color: var(--text-light);
 }
 
 .main__cta{
@@ -305,15 +309,151 @@ body {
 /* Fin animacion */
 
 
+/* Inicio Cards */
 
+.section__cards{
+    margin-top: 8%;
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.section__card{
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.card__span{
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    background-color: rgb(196, 48, 215, 0.2);
+}
+
+.card__icon{
+    width: 30px;
+    aspect-ratio: 1/1;
+}
+
+.card__title{
+    max-width: 150px;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    min-height: 44px;
+    max-height:44px ;
+}
+
+.card__description{
+    color: var(--text-light);
+}
+
+/* Fin Cards */
+/* Inicio Testimonios */
+
+.clients__cards{
+    margin-top: 8%;
+    display: grid;
+    justify-content: center;
+    gap: 4rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+.client__card{
+    width: 100%;
+    padding: 5px;
+    margin: 0 auto;
+    
+    background-color: rgb(196, 48, 215, 0.2);
+    border-radius: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.client__card:hover{
+    background-color: var(--color-purple);
+}
+
+.client__content{
+    width: 100%;
+    padding: 1rem;
+    background-color: white;
+    border-radius: calc(1rem - 5px);
+}
+
+.client__rating{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3px;
+    width: fit-content;
+    color: var(--color-principal);
+}
+
+.client__span{
+    display: block;
+    width: fit-content;
+}
+
+.client__star{
+    width: 18px;
+}
+
+.client__testimonial{
+    color: var(--text-dark);
+}
+.client__details{
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+
+}
+
+.client__img{
+    max-width: 50px;
+    border-radius: 100%;
+}
+
+.client__name{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    transition: color .3s ease-in-out;
+}
+
+.client__card:hover .client__name{
+    color: white;
+    
+}
+
+.client__job{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-light);
+    transition: color 0.3s ease-in-out;
+}
+
+.client__card:hover .client__job{
+    color: white;
+}
+
+
+/* Fin Testimonios */
+
+/*Inicio mediaqueries menu desplegable*/
 
 @media(min-width:375px){
     .header__userIcon{
       display: block;
     }
 }
-
-/*Inicio mediaqueries menu desplegable*/
 
 @media(min-width:425px){
     .nav__links{
@@ -334,6 +474,23 @@ body {
        
     }
 
+    .section__cards{
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+ 
+
+    .client__card{
+        width: 100%;
+        /* min-width: 357px; */
+        /* max-width: 357px; */
+        padding: 5px;
+        
+        background-color: rgb(196, 48, 215, 0.2);
+        border-radius: 1rem;
+        transition: background-color 0.3s ease-in-out;
+    }
 
 }
 
@@ -462,7 +619,30 @@ body {
     }
     /* Fin main hero */
 
+    .section__cards{
 
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    .clients__cards{
+        gap: 8px;
+       
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .client__card{
+        width: 100%;
+        padding: 5px;
+        
+        background-color: rgb(196, 48, 215, 0.2);
+        border-radius: 1rem;
+        transition: background-color 0.3s ease-in-out;
+    }
+    .client__content{
+        min-height: 256px;
+        max-height: 256px;
+    }
    
 }
 
@@ -473,6 +653,14 @@ body {
        
     }
 
+}
+
+@media(min-width:960px){
+    
+    .section__cards{
+        margin-top: 10%;
+
+    }
 }
 
 
@@ -499,6 +687,10 @@ body {
        
     }
 
+    .section__cards{
+        margin-top: 8%;
+
+    }
 }
 
 @media(min-width:1350px){

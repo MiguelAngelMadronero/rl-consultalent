@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 <body>
     <header class="header">
@@ -65,13 +69,151 @@
       </div>
       <!-- <div class="main__elipse"></div> -->
     </main>
-    <section class="container">
-      <h2>Sección en construcción</h2>
+    <section class="section">
+      <div class="section__container container" id="cards">
+        <div class="section__cards">
+          <div class="section__card">
+            <span class="card__span">
+              <img src="./img/icon-portafolio.svg" alt="icono" class="card__icon">
+            </span>
+            <h4 class="card__title">Empleabilidad Personalizada</h4>
+            <div class="card__description">
+              Brindamos un asesoramiento a medida. Te acompañamos en la identificación de tus competencias clave y en el fortalecimiento de tu marca personal. 
+            </div>
+          </div>
+          <div class="section__card">
+            <span class="card__span">
+              <img src="./img/icon-task.svg" alt="icono" class="card__icon">
+            </span>
+            <h4 class="card__title">Selección de Talento Eficaz</h4>
+            <div class="card__description">
+              Conectamos empresas con profesionales altamente calificados mediante procesos de selección ágiles y eficientes. 
+            </div>
+          </div>
+          <div class="section__card">
+            <span class="card__span">
+              <img src="./img/icon-graph.svg" alt="icono" class="card__icon">
+            </span>
+            <h4 class="card__title">Aliado Estratégico</h4>
+            <div class="card__description">
+              Trabajamos codo a codo con nuestros clientes para ofrecer soluciones personalizadas que optimizan la gestión del talento 
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </section>
-    
+    <section class="clients">
+      <div class="clients__container container">
+        <h2 class="clients__title">Confianza Reflejada en Nuestros Clientes</h2>
+        <p class="clients__description">Descubre cómo hemos transformado carreras y empresas a través de nuestras soluciones estratégicas. Estas son las experiencias de quienes confiaron en RLConsultalent.</p>
+        <div class="clients__cards">
+          <div class="client__card">
+            <div class="client__content">
+                <div class="client__rating">
+                  <span class="client__span">
+                    <img src="./img/star-filled.svg" alt="estrella" class="client__star">
+                  </span>
+                  <span class="client__span">
+                    <img src="./img/star-filled.svg" alt="estrella" class="client__star">
+                  </span>
+                  <span class="client__span">
+                    <img src="./img/star-filled.svg" alt="estrella" class="client__star">
+                  </span>
+                  <span class="client__span">
+                    <img src="./img/star-filled.svg" alt="estrella" class="client__star">
+                  </span>
+                  <span class="client__span">
+                    <img src="./img/star-filled.svg" alt="estrella" class="client__star">
+                  </span>
+                </div>
+                <p class="client__testimonial">
+                  "Gracias a RLConsultalent, logré identificar mis fortalezas y potenciar mi marca personal. En pocas semanas, estaba recibiendo ofertas de empleo que nunca imaginé. Su equipo es increíblemente profesional y su asesoramiento personalizado me hizo sentir respaldado en todo momento."
+                </p>
+            </div>
+            <div class="client__details">
+              <img src="./img/image-emily.jpg" alt="foto de cliente" class="client__img">
+              <div class="client_info">
+                <h4 class="client__name">María García</h4>
+                <h5 class="client__job">Gerente de Proyectos</h5>
+              </div>
+            </div>
+          </div>
+          <div class="client__card">
+            <div class="client__content">
+                <div class="client__rating">
+                  <span class="client__span">
+                    <img src="./img/star-filled.svg" alt="estrella" class="client__star">
+                  </span>
+                  <span class="client__span">
+                    <img src="./img/star-filled.svg" alt="estrella" class="client__star">
+                  </span>
+                  <span class="client__span">
+                    <img src="./img/star-filled.svg" alt="estrella" class="client__star">
+                  </span>
+                  <span class="client__span">
+                    <img src="./img/star-filled.svg" alt="estrella" class="client__star">
+                  </span>
+                  <span class="client__span">
+                    <img src="./img/star-filled.svg" alt="estrella" class="client__star">
+                  </span>
+                </div>
+                <p class="client__testimonial">
+                  "Nuestro proceso de selección de personal se transformó completamente gracias a RLConsultalent. Encontraron candidatos excepcionales en tiempo récord, y sus herramientas innovadoras facilitaron una integración perfecta en nuestra empresa. Son verdaderamente el aliado estratégico que estábamos buscando."
+
+                </p>
+            </div>
+            <div class="client__details">
+              <img src="./img/image-emily.jpg" alt="foto de cliente" class="client__img">
+              <div class="client_info">
+                <h4 class="client__name">Carlos Rodríguez</h4>
+                <h5 class="client__job">Director de Recursos Humanos</h5>
+              </div>
+            </div>
+          </div>
+          <div class="client__card">
+            <div class="client__content">
+                <div class="client__rating">
+                  <span class="client__span">
+                    <img src="./img/star-filled.svg" alt="estrella" class="client__star">
+                  </span>
+                  <span class="client__span">
+                    <img src="./img/star-filled.svg" alt="estrella" class="client__star">
+                  </span>
+                  <span class="client__span">
+                    <img src="./img/star-filled.svg" alt="estrella" class="client__star">
+                  </span>
+                  <span class="client__span">
+                    <img src="./img/star-filled.svg" alt="estrella" class="client__star">
+                  </span>
+                  <span class="client__span">
+                    <img src="./img/star-filled.svg" alt="estrella" class="client__star">
+                  </span>
+                </div>
+                <p class="client__testimonial">
+                  "No puedo agradecer lo suficiente a RLConsultalent por su apoyo en mi transición profesional. Su enfoque cercano y personalizado me ayudó a definir claramente mis metas y a conectarme con oportunidades laborales que se alineaban con mis expectativas. ¡Una experiencia transformadora!"
+                </p>
+            </div>
+            <div class="client__details">
+              <img src="./img/image-emily.jpg" alt="foto de cliente" class="client__img">
+              <div class="client_info">
+                <h4 class="client__name">Laura Pérez</h4>
+                <h5 class="client__job">Especialista en Marketing</h5>
+              </div>
+            </div>
+          </div>
+         
+            
+          
+        </div>
+      </div>
+    </section>
 
    
-    <script src="./js/nav.js" defer></script>
-    
+
+  <!-- <script src="https://unpkg.com/scrollreveal" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script> -->
+  <script src="./js/nav.js" defer></script>
+  <!-- <script src="./js/index.js" defer ></script> -->
 </body>
 </html>
