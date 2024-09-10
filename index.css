@@ -355,6 +355,22 @@ body {
 /* Fin Cards */
 /* Inicio Testimonios */
 
+.clients__title{
+    color: var(--color-rose);
+    margin-bottom: 18px;
+    font-size: 1.6rem;
+    text-align: center;
+    /* text-wrap: nowrap; */
+}
+
+.clients__description{
+    font-size: 1.2rem;
+    color: var(--text-light);
+    max-width: 950px;
+    text-align: center;
+
+}
+
 .clients__cards{
     margin-top: 8%;
     display: grid;
@@ -477,6 +493,8 @@ body {
     .section__cards{
 
         grid-template-columns: repeat(2, 1fr);
+
+
     }
 
  
@@ -619,6 +637,17 @@ body {
     }
     /* Fin main hero */
 
+    .clients__title{
+    font-size: 2rem;
+        
+        text-align: left;
+    }
+    
+    .clients__description{
+        
+        text-align: left;
+    
+    }
     .section__cards{
 
         grid-template-columns: repeat(3, 1fr);
@@ -628,7 +657,9 @@ body {
     .clients__cards{
         gap: 8px;
        
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+
+
     }
 
     .client__card{
@@ -639,9 +670,16 @@ body {
         border-radius: 1rem;
         transition: background-color 0.3s ease-in-out;
     }
+    
     .client__content{
-        min-height: 256px;
-        max-height: 256px;
+        min-height: 300px;
+        max-height: 300px;
+    }
+
+    
+
+    .client__job{
+        text-wrap: nowrap;
     }
    
 }
@@ -689,8 +727,20 @@ body {
 
     .section__cards{
         margin-top: 8%;
+    }
+
+    .clients__cards{
+        gap: 8px;
+       
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 
     }
+
+    /* .client__content{
+        min-height: 300px;
+        max-height: 300px;
+    } */
+
 }
 
 @media(min-width:1350px){
