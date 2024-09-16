@@ -463,6 +463,145 @@ body {
 
 /* Fin Testimonios */
 
+/* Inicio Preguntas Frecuentes */
+
+.question__title{
+    color: var(--color-rose);
+    margin-bottom: 32px;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.question__texts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 1.9rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* Fin preguntas frecuentes */
+
+/* Inicio Footer */
+
+.footer{
+    background-color: var(--color-rose);
+    color: #fff;
+
+}
+
+.footer__container{
+    width: 80%;
+}
+
+.footer__content{
+    margin-bottom: 10%;
+}
+
+.footer__contact{
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    gap: 10px;
+    
+}
+
+
+
+/* .footer__contact::after{
+    content: 'Phone: +1-543-123-4567';
+    margin-left: 10px;
+} */
+
+/* .footer__contact--email::after{
+  content: 'example@fylo.com';
+} */
+
+.footer__navs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    gap: 20px;
+   
+}
+
+.footer__nav{
+    text-decoration: none;
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+
+.footer__nav:hover{
+    color:var(--Bright-Blue)
+}
+
+.footer__social{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+    gap: 8px;
+    width: 80%;
+    /* fill: red; */
+
+
+}
+
+.footer__link{
+    /* border: 1px solid #fff; */
+    border-radius: 100%;
+    /* padding: 3px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.footer__icon{
+    width: 80%;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 100%;
+    fill: #fff;
+    stroke: white;
+}
+
+
+
+#link__svg{
+    fill: #fff;
+    border: 1px solid white;
+    width: 100% !important;
+    height: 100% !important;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 100%;
+    transition: .3s ease-in-out;
+}
+
+#link__svg:hover{
+    fill: var(--Bright-Blue) !important;
+    border-color: var(--Bright-Blue);
+}
+
+
+
+
+/* Fin Footer */
+
+
 /*Inicio mediaqueries menu desplegable*/
 
 @media(min-width:375px){
@@ -638,7 +777,7 @@ body {
     /* Fin main hero */
 
     .clients__title{
-    font-size: 2rem;
+        font-size: 2rem;
         
         text-align: left;
     }
@@ -672,8 +811,8 @@ body {
     }
     
     .client__content{
-        min-height: 300px;
-        max-height: 300px;
+        min-height: 200px;
+        max-height: 200px;
     }
 
     
@@ -681,6 +820,68 @@ body {
     .client__job{
         text-wrap: nowrap;
     }
+
+    /* Preguntas Frecuentes inicio */
+    .question__title{
+        
+        font-size: 2rem;
+    }
+
+    .subtitle{
+        text-align: center;
+        font-size: 2.2rem;
+        margin-bottom: 5%;
+    }
+
+    /* Fin Preguntas frecuentes */
+
+    /* Inicio footer */
+    .footer{
+    }
+    .footer__desktop{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .footer__contact--desktop{
+        
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .footer__contact{
+        line-height: 0;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: max-content;
+        gap: 10px;
+        
+    }
+
+    .footer__navs{
+       
+        margin-top: 0;
+        
+        width: 200px;
+        max-width: max-content;
+       
+    }
+
+    .footer__social{
+        margin: 0;
+        
+
+     
+        width: 80%;
+        max-width: max-content;
+
+    }
+
+    /* Fin Footer */
    
 }
 
