@@ -161,6 +161,7 @@ body {
     text-decoration: none;
     color: var(--color-rose);
     font-weight: 600;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header__icons {
