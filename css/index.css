@@ -154,6 +154,7 @@ body {
     margin-right: 10px;
     margin-top: 10px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 .nav__link {
     display: block;
@@ -177,6 +178,7 @@ body {
 .header__menu--container{
     width: 30px;
     height: 30px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header__menu {
@@ -233,6 +235,7 @@ body {
     border-top-right-radius: 0;
     transition: border-top-right-radius 0.5s ease-in-out;
     margin-bottom: 8%;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .main__cta:hover{
@@ -416,7 +419,9 @@ body {
   }
 /* FIN BENEFICIOS */
 /* Inicio Testimonios */
-
+.contenedor-pregunta{
+    -webkit-tap-highlight-color: transparent;
+}
 .clients__title{
     color: var(--color-rose);
     margin-bottom: 18px;
@@ -728,6 +733,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-tap-highlight-color: transparent;
 
 }
 
@@ -753,6 +759,8 @@ body {
     padding: 5px;
     border-radius: 100%;
     transition: .3s ease-in-out;
+    -webkit-tap-highlight-color: transparent;
+
 }
 
 #link__svg:hover{
