@@ -28,10 +28,10 @@
           <nav class="header__nav">
               <div class="nav__links" id="nav__selected">
                 <svg id="nav__close" class="header__closeIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
-                <a href="https://www.youtube.com/watch?v=_WJdsklHSkA" class="nav__link">Inicio</a>
-                <a href="https://www.youtube.com/watch?v=_WJdsklHSkA" class="nav__link">Servicios</a>
-                <a href="nosotros.html" class="nav__link" >Nosotros</a>
-                <a href="contact.html" class="nav__link">Contacto</a>
+                <a href="#inicio" class="nav__link">Inicio</a>
+                <a href="#servicios" class="nav__link">Servicios</a>
+                <a href="#testimonios" class="nav__link" >Testimonios</a>
+                <a href="#contacto" class="nav__link">Contacto</a>
             </div>
             <figure class="header__icons">
              
@@ -66,7 +66,7 @@
       </div>
       <!-- <div class="main__elipse"></div> -->
     </main>
-    <section class="section">
+    <section class="section" id="servicios">
       <div class="section__container container" id="cards">
         <div class="section__cards">
           <div class="section__card">
@@ -100,7 +100,88 @@
       </div>
       
     </section>
-    <section class="clients">
+
+      <!-- Inicio sección beneficios -->
+      <section class="benefits__container container">
+        <figure class="benefits__img">
+          <img src="./img/benefits-model.jpg" alt="Imagen Beneficios" />
+        </figure>
+  
+        <div class="benefits__text">
+          <h2 class="benefits__title">
+            Transforma tu Futuro Profesional con Nuestros <span class="main__underlined">Servicios Personalizados y</span> <span class="main__underlined">Soluciones Estratégicas</span>
+            
+             
+          </h2>
+          <p class="benefits__description">
+            Mejora tu viaje fitness con suplementos de alta calidad y ropa cómoda
+            que te mantiene fresco, sin necesidad de habilidades especiales.
+          </p>
+  
+          <ul class="benefits__list">
+            <li class="list-flex">
+              <div class="icon-container">
+              <svg
+                class="icon__check"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                style="fill: #c430d7;"
+              >
+                <path
+                  d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+                ></path>
+              </svg>
+              </div>
+              <div class="benefits__text benefits__text-check">Cada cliente recibe un plan diseñado a medida para alcanzar sus metas, ya sea en empleabilidad o en la selección de candidatos.
+
+              </div>
+            </li>
+            <li class="list-flex">
+              <div class="icon-container">
+              <svg
+                class="icon__check"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                style="fill: #c430d7;"
+              >
+                <path
+                  d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+                ></path>
+              </svg>
+              </div>
+              
+              <div class="benefits__text benefits__text-check">Gestionamos cada proceso de selección y asesoría con rapidez, asegurando resultados sin sacrificar la calidad.</div>
+
+            </li>
+            <li class="list-flex">
+              <div class="icon-container">
+              <svg
+                class="icon__check"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                style="fill: #c430d7;"
+              >
+                <path
+                  d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"
+                ></path>
+              </svg>
+              </div>
+              
+              <div class="benefits__text benefits__text-check">Facilitamos la conexión con empresas y profesionales a través de una amplia red de contactos</div>
+
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Fin sección beneficios -->
+
+    <section class="clients" id="testimonios">
       <div class="clients__container container">
         <h2 class="clients__title">Confianza Reflejada en Nuestros Clientes</h2>
         <p class="clients__description">Descubre cómo hemos transformado carreras y empresas a través de nuestras soluciones estratégicas. Estas son las experiencias de quienes confiaron en RLConsultalent.</p>
@@ -247,6 +328,44 @@
 
     <!-- PREGUNTAS FRECUENTES FIN -->
 
+    <!-- INICIO CONTACTO -->
+    <section class="main__contact" id="contacto">
+      
+      <img src="./img/contacto.jpg" alt="telefono" class="img__contact">
+
+      <div class="main__content container">
+        <h4 class="contact__subtitle">Contacto</h2>
+        <p class="paragraph__contact">¿Quieres contactarme?<br> Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+        <form  class="form" action="https://formspree.io/f/xblrvqwq"
+        method="POST">
+          <div class="form__container">
+          <input class="form__input" type="text" id="name" name="name" placeholder=" " required >
+          <label for="name" class="form__label">Nombre</label>
+
+          </div>
+          <div class="form__container">
+          <input class="form__input" type="email" id="email" name="email" placeholder=" " required >
+          <label for="email" class="form__label">Email</label>
+
+          </div>
+          <div class="form__container">
+          <input class="form__input" type="text" id="asunto" name="asunto" placeholder=" " required >
+          <label for="asunto" class="form__label">Asunto</label>
+
+          </div>
+          <div class="form__container">
+          <textarea class="form__input form__message" type="text" id="mensaje" name="mensaje" placeholder=" " required ></textarea>
+          <label for="mensaje" class="form__label">Mensaje</label>
+
+          </div>
+
+          <input type="submit" class="form__submit main__cta contact__btn" value="Enviar mensaje">
+          
+        </form>
+      </div>
+    </section>
+     <!-- FIN CONTACTO -->
+
     <!-- Inicio Footer -->
      
      
@@ -255,7 +374,9 @@
   
         <section class="footer__content">
           <figure class="footer__logo--caja">
-            <img src="./img/logo-white.svg" alt="" class="footer__logo">
+            <!--<img src="./img/logo-white.svg" alt="" class="footer__logo">  -->
+            <h3 class="footer__title">RL Consultalent</h3>
+
           </figure>
   
   
@@ -268,27 +389,27 @@
   
             <div class="footer__contact">
               <img src="./img/icon-phone.svg" alt="" class="footer__img">
-              <span class="footer__phone">Phone: +1-543-123-4567</span>
+              <span class="footer__phone">Celular: +57 3137613879</span>
             </div>
             <div class="footer__contact footer__contact--email">
               <img src="./img/icon-email.svg" alt="imagen" class="footer__img">
-              <span class="footer__email">example@fylo.com</span>
+              <span class="footer__email">rlconsultalent@gmail.com</span>
   
             </div>
           </div>
     
           <div class=" footer__navs footer__navs--about">
-            <a href="" class="footer__nav">About Us</a>
-            <a href="" class="footer__nav">Jobs</a>
-            <a href="" class="footer__nav">Press</a>
-            <a href="" class="footer__nav">Blog</a>
+            <a href="#inicio" class="footer__nav">Inicio</a>
+            <a href="#servicios" class="footer__nav">Servicios</a>
+            <a href="#testimonios" class="footer__nav">Testimonios</a>
+            <!-- <a href="" class="footer__nav">Blog</a> -->
           </div>
     
           <div class=" footer__navs footer__navs--about">
             <!-- <a href="" class="footer__nav"></a> -->
-            <a href="" class="footer__nav">Contact Us</a>
-            <a href="" class="footer__nav">Terms</a>
-            <a href="" class="footer__nav">Privacy</a>
+            <a href="#contacto" class="footer__nav">Contacto</a>
+            <!-- <a href="" class="footer__nav">Terms</a>
+            <a href="" class="footer__nav">Privacy</a> -->
           </div>
     
           <div class="footer__social">

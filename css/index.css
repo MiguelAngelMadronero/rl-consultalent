@@ -4,7 +4,7 @@
     padding: 0;
     scrollbar-width: none;
     scrollbar-color:rgb(223, 72, 129, 0.4) rgb(196, 48, 215, 0.3) ;
-
+    
 
 }
 
@@ -353,6 +353,68 @@ body {
 }
 
 /* Fin Cards */
+
+/* INICIO BENEFICIOS */
+
+.benefits__text{
+    color: var(--text-dark);
+}
+
+
+  .benefits__title {
+    margin: 20px 0 20px 0;
+  }
+  .main__underlined{
+    color: var(--color-rose);
+  }
+  .benefits__container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    font-family: var(--font-poppins);
+  }
+  
+  .benefits__img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .benefits__img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: top;
+  }
+  
+  .benefits__description {
+    line-height: 23px;
+    margin-bottom: 15px;
+    color: var(--text-light);
+  }
+  
+  span {
+    line-height: 28px;
+  }
+  
+  .benefits__list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .list-flex{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--text-light);
+  }
+  .icon__check{
+    width: 24px;
+    aspect-ratio: 1/1;
+  }
+  .benefits__text-check{
+    margin: 0;
+  }
+/* FIN BENEFICIOS */
 /* Inicio Testimonios */
 
 .clients__title{
@@ -488,6 +550,105 @@ body {
 
 /* Fin preguntas frecuentes */
 
+/* INICIO CONTACTO */
+.main__contact{
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-template-rows: 1fr;
+    /* padding-bottom: 0; */
+}
+
+.img__contact{
+    display: none;
+}
+.main__contact{
+    width: 100%;
+    background-color: #c330d721;
+}
+.contact__subtitle{
+    color: var(--color-rose);
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 2.5%;
+}
+.paragraph__contact{
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 5.5%;
+    color: var(--text-light);
+}
+
+.form{
+    display: grid;
+    gap: 2rem ;
+}
+
+.form__container{
+    position: relative;
+
+}
+
+.form__input{
+    width: 100%;
+    background-color: #fff;
+    color: var(--text-color);
+    padding: 1.2rem .6rem .4rem .6rem  ;
+    border: none;
+    border-bottom: 1px solid #C8C8C8;
+    outline: none;
+    font-family: var(--font-open-sans);
+    transition: border-bottom .2s ease-in-out;
+    caret-color: var(--text-light);
+}
+
+
+.form__input:focus{
+    border-bottom: 3px solid var(--color-rose);
+}
+
+
+
+.form__input:focus + .form__label{
+    color:var(--color-rose)
+}
+
+.form__label{
+    color: #A2A2A2;
+    cursor: pointer;
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    font-size: 12px;
+    transform: translateY(-2px);
+    transition: color .2s ease-in-out;
+}
+
+.form__submit{
+    width: fit-content;
+    background-color: var(--blue);
+    border: none;
+    padding:12px 16px 12px 16px;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+
+.form__message{
+    resize: none;
+    outline: none;
+    overflow: auto;
+    scrollbar-width: none;
+    height: 140px;
+}
+
+.figure__contact{
+    display: none;
+}
+/* FIN CONTACTO */
+
 /* Inicio Footer */
 
 .footer{
@@ -503,7 +664,10 @@ body {
 .footer__content{
     margin-bottom: 10%;
 }
-
+.footer__title{
+    font-size: 2rem;
+    color: var(--white);
+}
 .footer__contact{
     line-height: 50px;
     display: flex;
@@ -592,8 +756,8 @@ body {
 }
 
 #link__svg:hover{
-    fill: var(--Bright-Blue) !important;
-    border-color: var(--Bright-Blue);
+    fill: var(--color-novenary) !important;
+    border-color: var(--color-novenary);
 }
 
 
@@ -821,6 +985,28 @@ body {
         text-wrap: nowrap;
     }
 
+    /* INICIO BENEFICIOS */
+    .benefits__container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .benefits__title{
+        margin: 0;
+        margin-bottom: 20px;
+      }
+    
+      .benefits__text {
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .benefits__text-check{
+        margin: 0;
+      }
+    /* FIN BENEFICIOS */
     /* Preguntas Frecuentes inicio */
     .question__title{
         
@@ -834,6 +1020,46 @@ body {
     }
 
     /* Fin Preguntas frecuentes */
+
+    /* INICIO CONTACTO */
+    .main__contact{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        /* padding-bottom: 0; */
+        padding: 0 0 0 0;
+    }
+
+    .img__contact{
+        display: block;
+    }
+    .main__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+   .contact__subtitle{
+    font-size: 3.4rem;
+    text-align: left;
+   }
+
+   .paragraph__contact{
+    font-size: 1.5rem;
+    text-align: left;
+   }
+
+   .contact__btn{
+    font-size:1rem;
+   }
+    .img__contact{
+        
+        width:100%;
+        height:auto;
+    }
+    /* FIN CONTACTO */
 
     /* Inicio footer */
     .footer{
@@ -942,6 +1168,27 @@ body {
         max-height: 300px;
     } */
 
+    /* INICIO BENEFICIOS */
+  .benefits__img img {
+    max-height: 500px;
+  }
+
+  .benefits__text {
+    margin-left: 40px;
+  }
+
+  .benefits__text-check{
+        margin: 0;
+    }
+
+  p {
+    font-size: 1.05rem;
+  }
+
+  .benefits__description {
+    line-height: 27px;
+  }
+  /* FIN BENEFICIOS */
 }
 
 @media(min-width:1350px){
@@ -997,6 +1244,10 @@ body {
       font-size: 1.5rem;
         
     }
+
+    .contact__btn{
+        font-size:1rem;
+       }
 
     /* .main__img{
         width: 49%;
