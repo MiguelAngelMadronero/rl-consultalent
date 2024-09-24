@@ -1062,8 +1062,7 @@ body {
     /* FIN CONTACTO */
 
     /* Inicio footer */
-    .footer{
-    }
+   
     .footer__desktop{
         display: flex;
         flex-direction: row;

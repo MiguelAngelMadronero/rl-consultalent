@@ -1,6 +1,6 @@
 const nav = document.querySelector('.nav__links');
 const botonAbrir = document.querySelector('#nav__open');
-
+const Linksnav = document.querySelectorAll(".nav__link")
 const botonAbrirMenu = document.querySelector('.header__menu--container')
 const botonCerrar = document.querySelector('#nav__close');
 const path = document.getElementById('nav__open--path');
@@ -30,4 +30,10 @@ document.addEventListener("click", function(event) {
     }
 })
 
+Linksnav.forEach(link =>{
+    link.addEventListener('click', () => {
+        nav.classList.remove("nav__links--mostrar");
+
+    } )
+})
 
